@@ -2,3 +2,5 @@ jupyter
 gensim
 nltk
 sklearn
+numpy
+beautifulsoup4
