@@ -1,8 +1,6 @@
 from bs4 import BeautifulSoup
-from nltk import sent_tokenize, word_tokenize
+from nltk import word_tokenize
 import numpy as np
-import string
-from collections import OrderedDict
 
 # loading data
 
@@ -39,7 +37,7 @@ def get_all_docs(list_of_tuples):
     for i in range(len(list_of_tuples)):
         current = list_of_tuples[i]
         all_docs.append(current[2])
-        lookup[i] = current[0]
+        lookup[i] = current[2]
     return all_docs, lookup
 
 # calculations
@@ -116,7 +114,7 @@ def get_similar(cos_sim_matrix, idx, n, direction="most"):
         all_values = sorted(enumerate(filter(lambda x: not np.isnan(x), cos_sim_matrix[idx])), key=lambda x: x[1], reverse=True)
     else:
         all_values = sorted(enumerate(filter(lambda x: not np.isnan(x), cos_sim_matrix[idx])), key=lambda x: x[1])
-    return all_values[:n]
+    return [(x[0] + 1, x[1]) for x in all_values[:n]]
 
 
 # I/O
