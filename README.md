@@ -4,7 +4,9 @@
 
 You can clone this repository:
 
-```git@github.com:michaelcapizzi/nlp-basics.git```
+```
+git@github.com:michaelcapizzi/nlp-basics.git
+```
 
 To run the `jupyter` notebook you'll need a `python` environment for `python 3` with the following requirements:
 
@@ -17,11 +19,15 @@ To run the `jupyter` notebook you'll need a `python` environment for `python 3` 
 
 All of these can be installed via `pip` or using the `requirements.txt` file:
 
-```pip install -r requirements.txt```
+```
+pip install -r requirements.txt
+```
 
 Then to open the notebook, simply run the following in the root folder of the cloned project:
 
-```jupyter notebook```
+```
+jupyter notebook
+```
 
 This will open a new window in your default browser.  You can then open the notebook file of choice (ending in `.ipynb`) by clicking on it.
 
