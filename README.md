@@ -11,8 +11,11 @@ To run the `jupyter` notebook you'll need a `python` environment for `python 3` 
  - jupyter
  - numpy
  - gensim
+ - sklearn
+ - numpy
+ - beautifulsoup4
 
-All three of these can be installed via `pip` or using the `requirements.txt` file:
+All of these can be installed via `pip` or using the `requirements.txt` file:
 
 ```pip install -r requirements.txt```
 
@@ -20,7 +23,7 @@ Then to open the notebook, simply run the following in the root folder of the cl
 
 ```jupyter notebook```
 
-This will open a new window in your default browser.  You can then open the file, `Word-Embedding_Demo.ipynb`, by clicking on it.
+This will open a new window in your default browser.  You can then open the notebook file of choice (ending in `.ipynb`) by clicking on it.
 
 It will open in a new window.
 
