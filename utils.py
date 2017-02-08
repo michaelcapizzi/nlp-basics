@@ -4,6 +4,7 @@ import numpy as np
 
 # loading data
 
+
 def load_data(path_to_data):
     """
     Loads `.tsv` of data into a <dict>
@@ -26,6 +27,7 @@ def load_data(path_to_data):
             out_.append((id, label, text))
     return out_
 
+
 def get_all_docs(list_of_tuples):
     """
     Given a dictionary of data, this will collect all the text into one list
@@ -39,6 +41,7 @@ def get_all_docs(list_of_tuples):
         all_docs.append(current[2])
         lookup[i] = current[2]
     return all_docs, lookup
+
 
 # calculations
 
@@ -57,6 +60,7 @@ def normalize_vector(vector):
         # if norm == 0, then original vector was all 0s
         return vector
 
+
 def cos_sim(vector_one, vector_two):
     """
     Calculate the cosine similarity of two `numpy` vectors
@@ -70,6 +74,7 @@ def cos_sim(vector_one, vector_two):
 
     # calculate the dot product between the two normalized vectors
     return vector_one_norm.dot(vector_two_norm)
+
 
 def generate_all_cos_sim(X_matrix):
     """
@@ -97,6 +102,7 @@ def generate_all_cos_sim(X_matrix):
                 # set diagonal to None
                 cos_matrix[i][j] = None
     return cos_matrix
+
 
 def get_similar(cos_sim_matrix, idx, n, direction="most"):
     """
@@ -129,6 +135,7 @@ def save_matrix_to_csv(X_matrix, save_location):
     if "sparse" in str(type(X_matrix)):
         X_matrix = X_matrix.toarray()
     np.savetxt(save_location, X_matrix, delimiter=",")
+
 
 def load_matrix_from_csv(location):
     """
