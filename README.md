@@ -1,4 +1,4 @@
-# Word Embeddings
+# NLP Basics
 
 ## Preparation
 
