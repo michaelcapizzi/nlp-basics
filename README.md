@@ -11,7 +11,6 @@ git@github.com:michaelcapizzi/nlp-basics.git
 To run the `jupyter` notebook you'll need a `python` environment for `python 3` with the following requirements:
 
  - jupyter
- - numpy
  - gensim
  - sklearn
  - numpy
