@@ -2,3 +2,5 @@ beautifulsoup4
 gensim==1.0.1
 nltk==3.2.2
 sklearn
+numpy
+beautifulsoup4
