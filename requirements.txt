@@ -1,6 +1,6 @@
 beautifulsoup4
 gensim==1.0.1
-nltk==3.2.2
+nltk==3.4.5
 sklearn==0.23.2
 numpy
 beautifulsoup4
